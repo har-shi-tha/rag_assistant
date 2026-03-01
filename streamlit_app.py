@@ -27,7 +27,7 @@ def reset_vector_db():
 
 
 st.set_page_config(page_title="RAG Knowledge Assistant", layout="wide")
-st.title("📚 RAG Knowledge Assistant")
+st.title(" RAG Knowledge Assistant")
 
 if "rag" not in st.session_state:
     st.session_state.rag = RAG()
@@ -47,7 +47,7 @@ with st.sidebar:
     colA, colB = st.columns(2)
 
     with colA:
-        if st.button("📥 Index Documents", use_container_width=True):
+        if st.button("Index Documents", use_container_width=True):
             if not uploaded_files:
                 st.warning("Upload at least one document first.")
             else:
@@ -65,7 +65,7 @@ with st.sidebar:
                     st.success(f"Indexed {added} chunks from {len(docs)} file(s).")
 
     with colB:
-        if st.button("🧹 Reset Index", use_container_width=True):
+        if st.button(" Reset Index", use_container_width=True):
             reset_vector_db()
             st.session_state.rag = RAG()
             st.session_state.indexed = False
@@ -79,7 +79,7 @@ col1, col2 = st.columns([2, 1])
 with col2:
     k = st.slider("Top-K chunks", min_value=2, max_value=8, value=4, step=1)
 with col1:
-    ask_btn = st.button("🔎 Ask", type="primary", use_container_width=True)
+    ask_btn = st.button(" Ask", type="primary", use_container_width=True)
 
 if ask_btn:
     if not st.session_state.indexed:
@@ -93,10 +93,10 @@ if ask_btn:
         with st.spinner("Generating answer using Ollama..."):
             answer = st.session_state.rag.generate(query, contexts)
 
-        st.subheader("✅ Answer")
+        st.subheader(" Answer")
         st.write(answer)
 
-        st.subheader("📌 Retrieved Context")
+        st.subheader(" Retrieved Context")
         for i, c in enumerate(contexts, 1):
             src = c["meta"]["source"]
             chk = c["meta"]["chunk"]
