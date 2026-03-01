@@ -1,13 +1,16 @@
-# Virtual environment
+# venv
 .venv/
 
-# Python cache
+# python cache
 __pycache__/
 *.pyc
 
-# Vector database
+# chroma vector db (generated)
 chroma_db/
 
-# OS files
+# secrets
+.env
+
+# OS junk
 .DS_Store
 Thumbs.db
