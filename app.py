@@ -36,7 +36,7 @@ def main():
         if low.startswith("ask:"):
             q = user.split("ask:", 1)[1].strip()
             contexts = rag.retrieve(q, k=4)
-            answer = rag.generate(q, contexts)   # ✅ FIXED (single return value)
+            answer = rag.generate(q, contexts)   #  FIXED (single return value)
             console.print("\n[bold]Answer:[/bold]")
             console.print(answer)
             continue
