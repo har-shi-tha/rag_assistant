@@ -1,0 +1,13 @@
+Regularization is used to prevent overfitting by penalizing large weights.
+
+L1 Regularization (Lasso):
+Adds the absolute value of weights to the loss function.
+Encourages sparsity in model parameters.
+
+L2 Regularization (Ridge):
+Adds the squared magnitude of weights to the loss function.
+Prevents weights from growing too large.
+
+Elastic Net combines L1 and L2 penalties.
+
+Regularization improves generalization performance on unseen data.

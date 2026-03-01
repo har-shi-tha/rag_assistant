@@ -1,0 +1,20 @@
+Gradient Descent is an optimization algorithm used to minimize loss functions in machine learning models.
+
+The algorithm updates parameters in the direction of the negative gradient:
+
+θ = θ - α * ∇J(θ)
+
+Where:
+- θ are model parameters
+- α is the learning rate
+- ∇J(θ) is the gradient of the loss function
+
+There are three main types:
+1. Batch Gradient Descent
+2. Stochastic Gradient Descent (SGD)
+3. Mini-Batch Gradient Descent
+
+If the learning rate is too large, the algorithm may diverge.
+If too small, convergence becomes slow.
+
+Gradient Descent is fundamental in training neural networks.

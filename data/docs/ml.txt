@@ -1,0 +1,7 @@
+Linear regression predicts a continuous output using the equation y = wx + b.
+
+Gradient descent is used to minimize loss functions such as mean squared error.
+
+Mean Squared Error (MSE) measures the average squared difference between predicted and actual values.
+
+Overfitting occurs when a model performs well on training data but poorly on unseen data.

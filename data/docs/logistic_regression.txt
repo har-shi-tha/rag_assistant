@@ -1,0 +1,15 @@
+Logistic Regression is a supervised classification algorithm used for binary classification problems.
+
+Unlike Linear Regression, it predicts probabilities using the sigmoid function:
+
+σ(z) = 1 / (1 + e^(-z))
+
+The output value ranges between 0 and 1, representing class probabilities.
+
+The decision boundary is typically set at 0.5.
+
+Logistic Regression uses Binary Cross-Entropy (Log Loss) as its cost function:
+
+Loss = -[y log(p) + (1-y) log(1-p)]
+
+It works well when the classes are linearly separable but struggles with highly nonlinear relationships unless features are engineered.

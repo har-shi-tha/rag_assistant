@@ -1,0 +1,14 @@
+Feature Engineering is the process of transforming raw data into meaningful input features for machine learning models.
+
+Common techniques:
+- Normalization
+- Standardization
+- One-hot encoding
+- Polynomial features
+- Feature scaling
+
+Proper feature engineering can significantly improve model performance.
+
+Domain knowledge plays a critical role in selecting relevant features.
+
+Poorly engineered features can degrade model accuracy even when using advanced algorithms.

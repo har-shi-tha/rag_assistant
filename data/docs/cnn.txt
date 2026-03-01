@@ -1,0 +1,15 @@
+Convolutional Neural Networks (CNNs) are deep learning models primarily used for image processing tasks.
+
+CNNs use convolutional layers to extract spatial features from input images.
+
+Key components:
+- Convolutional layers
+- Activation functions (ReLU)
+- Pooling layers (MaxPooling)
+- Fully connected layers
+
+The convolution operation applies filters (kernels) to detect edges, textures, and shapes.
+
+CNNs significantly reduce the number of parameters compared to fully connected networks.
+
+They are widely used in image classification, object detection, and medical imaging.

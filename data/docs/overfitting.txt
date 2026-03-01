@@ -1,0 +1,17 @@
+Overfitting occurs when a model learns the training data too well, including noise and outliers.
+
+This results in high training accuracy but poor performance on unseen data.
+
+Common causes:
+- Too many features
+- Small dataset
+- Highly complex models
+
+Prevention techniques:
+- Cross-validation
+- Regularization (L1, L2)
+- Dropout (in neural networks)
+- Early stopping
+- Increasing dataset size
+
+Underfitting is the opposite problem, where the model fails to capture patterns in the data.
